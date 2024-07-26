@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Aleatoria</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ruleta Aleatoria</h1>
+        <div class="ruleta" id="ruleta">
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <div class="centrar" onclick="spin()">
+                <div class="flecha"></div>
+            </div>
+        </div>
+        <textarea id="textarea" rows="12" cols="20"></textarea>
+        <button id="iniciar">Iniciar</button>
+        <button id="reiniciar">Reiniciar</button>
+        <div class="respuesta">
+            <h2>RESPUESTA</h2>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <button class="button reset" onclick="resetWheel()">Reiniciar</button>
+    <script src="script3.js"></script>
+</body>
+
+</html>

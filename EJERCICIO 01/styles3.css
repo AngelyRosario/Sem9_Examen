@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.ruleta {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+/* Mover la flecha al lado derecho de la ruleta y apuntar a las particiones */
+
+  .flecha {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 30px solid red; 
+    position: absolute;
+    top: 50%;
+    right: -160%;
+    transform: translateY(-50%);
+  }
+textarea {
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.respuesta {
+    margin-top: 20px;
+}
+
+.respuesta p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
